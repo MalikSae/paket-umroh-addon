@@ -18,6 +18,13 @@ if (is_admin()) {
     require_once PUA_PATH . 'includes/admin/class-admin-styler.php';
 }
 
+add_action('plugins_loaded', function () {
+    if (class_exists('WC_Settings_Page')) {
+        require_once PUA_PATH . 'includes/admin/class-settings-page.php';
+    }
+});
+
+
 // Load frontend hooks
 require_once PUA_PATH . 'includes/frontend/class-frontend-fields.php';
 require_once PUA_PATH . 'includes/frontend/class-price-handler.php';
