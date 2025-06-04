@@ -21,3 +21,5 @@ if (is_admin()) {
 // Load frontend hooks
 require_once PUA_PATH . 'includes/frontend/class-frontend-fields.php';
 require_once PUA_PATH . 'includes/frontend/class-price-handler.php';
+require_once PUA_PATH . 'includes/admin/class-settings-page.php';
+
