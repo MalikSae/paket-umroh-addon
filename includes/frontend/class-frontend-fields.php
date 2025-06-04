@@ -28,3 +28,8 @@ add_filter('woocommerce_get_item_data', function($item_data, $cart_item) {
     }
     return $item_data;
 }, 10, 2);
+
+add_filter('woocommerce_product_single_add_to_cart_text', function($text) {
+    $custom = get_option('paket_umroh_custom_button_text');
+    return $custom ?: $text;
+});
