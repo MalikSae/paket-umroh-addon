@@ -33,3 +33,9 @@ add_filter('woocommerce_product_single_add_to_cart_text', function($text) {
     $custom = get_option('paket_umroh_custom_button_text');
     return $custom ?: $text;
 });
+
+add_filter('woocommerce_product_add_to_cart_text', function($text) {
+    $custom = get_option('paket_umroh_custom_button_text');
+    return $custom ?: $text;
+});
+
