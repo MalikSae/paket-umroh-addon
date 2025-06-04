@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Paket Umroh Add-on for WooCommerce
  * Description: Tambahkan fitur pemesanan Paket Umroh berbasis tipe kamar, hotel, dan fasilitas.
- * Version: 1.0.0
+ * Version: 1.0.1
  * Author: MalikSae.com
  * Text Domain: paket-umroh-addon
  */
